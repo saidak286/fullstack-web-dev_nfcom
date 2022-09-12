@@ -1,0 +1,103 @@
+p{
+	color:#CC6600;
+	text-align:justify;
+	font-family:calibri, verdana, comic sans, tahoma;
+	font-size:12pt;
+}
+body{
+	/*background-image: linear-gradient(red, green, blue, yellow);*/
+	background-color:khaki;
+	background-image:url('../images/star.png');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-attachment:fixed;
+	margin:0cm 3cm; /* margin-top&bottom=0cm, margin-left&right=3cm */
+}
+hr{
+	border-width:1px;
+	border-color:#990000;
+	border-style:dashed;
+}
+/* groupping */
+fieldset, legend{
+	border:red groove 10px;
+	border-radius:30px;
+}
+
+legend{
+	padding:10px; /* all padding */
+	background-color:white;
+	color:red;
+	font-weight:bold;
+	font-size:14pt;
+	text-transform:uppercase;
+	font-family:ubuntu, calibri;
+	letter-spacing:5px;
+}
+
+table{
+	border:10px ridge maroon;
+	margin:auto;
+}
+
+td{
+	padding:5x;
+	border:1px solid green;
+}
+
+ol { 
+	list-style-image: url("../images/musik.gif"); 
+} 
+ul { 
+	list-style-image: url("../images/nyanyi.gif"); 
+} 
+ul.hobby { 
+	list-style-image: url("../images/heart.png"); 
+} 
+ul.menu { 
+	list-style-image: url("../images/jempol.gif"); 
+} 
+
+/*--------------pseudo class serta id & class------------------------*/
+div#menu{
+	text-align:center;
+	font-family:ubuntu,calibri,tahoma,jokerman;
+	padding:10px;
+}
+a.item:link, a.item:visited, a.item:active{
+	text-decoration:none;
+	font-size:14pt;
+	color:#B8860B;
+	border:2px solid #FFFACD;
+	padding:5px;
+	background:#FFD700;
+}
+a.item:hover{
+	text-decoration:none;
+	font-size:14pt;
+	color:red;
+	border:2px solid greenyellow;
+	padding:5px;
+	background:yellowgreen;
+}
+/*-----------------pseudo element----------------------*/
+p.p3:first-letter{
+	color:red;
+	font-size:36pt;
+	font-weight:bold;
+	font-family:algerian,jokerman;
+	float:left;
+	padding-right:10px;
+}
+p.p3:first-line{
+	color:green;
+	font-style:italic;
+}
+#atas,#bawah{
+	text-align:right;
+}
+h1{
+	text-shadow:3px 3px yellowgreen;
+	color:greenyellow;
+}
+

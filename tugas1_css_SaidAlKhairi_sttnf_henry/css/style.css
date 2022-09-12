@@ -1,0 +1,65 @@
+div {
+	border: 10cm;
+  	padding: 0.1cm;
+	background-clip: border-box;
+}
+
+p {
+    color:#CC6600;
+	text-align:justify;
+	font-family:calibri, verdana, comic sans, tahoma;
+	font-size:12pt;
+}
+
+body {
+	background-image: url('../img/logo.png');
+    background-repeat:no-repeat;
+	background-position:top left;
+	background-attachment:fixed;
+	margin:0cm 3cm; /* margin-top&bottom=0cm, margin-left&right=3cm */
+}
+
+h1, h2 {
+	color: #be6002;
+	font-family:calibri, verdana, comic sans, tahoma;
+}
+
+hr{
+	border-width:3px;
+	border-color: #498a7e;
+	border-style:dashed;
+}
+/* groupping */
+fieldset, legend{
+	border:#498a7e groove 10px;	
+}
+
+legend{
+	padding:10px; /* all padding */
+	color:#498a7e;
+	font-weight:bold;
+	font-size:14pt;
+	text-transform:uppercase;
+	font-family:ubuntu, calibri;
+	letter-spacing:5px;
+}
+
+table{
+	border:10px ridge maroon;
+	margin:auto;
+}
+
+td{
+	padding:5x;
+	border:1px solid green;
+}
+
+ol { 
+	list-style-image: url("../img/musik.gif");
+	color: #CC6600; 
+} 
+
+ul { 
+	list-style-image: url("../img/jempol.gif");
+	color: #CC6600;  
+} 

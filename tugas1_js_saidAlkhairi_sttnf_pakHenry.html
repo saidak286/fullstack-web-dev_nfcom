@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript">
+        /*
+        Diketahui:
+        pegawai: Ridwan
+        jabatan: manager
+        status: menikah 
+        Tugas: 
+        Cetak Data Pegawai berbentuk tabel:
+        Judul Kolom gunakan thead
+        Data2 gunakan tbody 
+        Nama Pegawai, Jabatan, Status, 
+        Gaji Pokok(if): Manager=>15 jt, Asisten Manager=>10 jt, Staff=>5 jt 
+        Tunjangan Jabatan: 15% dari gaji pokok
+        BPJS: 10% dari gaji pokok
+        Tunjangan Keluarga (ternary): dilihat dari status yg sudah menikah =>20% dari gaji pokok
+        Total Gaji: jumlahlahkan seluruh element gaji (gunakan tfoot)
+        Format pengumpulan tugas:
+        Disimpan di githubnya masing2:
+        contoh:
+        buat repo baru (javascript) -> file tugas di push di repo tsb
+        lalu linknya dlm txt di assign ke LMS
+        */
+        var pegawai = "Ridwan";
+        var jabatan = "Manager";
+        var status = "Menikah";
+        
+        if(jabatan === "Manager"){
+            gapok = 15000000;
+        }
+        else if(jabatan === "Asisten Manager"){
+            gapok = 10000000;
+        }
+        else if(jabatan === "Staff"){
+            gapok = 5000000;
+        }
+        else{
+            gapok = 0;
+        }
+        
+        var tunjab = gapok * 0.15;
+        var bpjs = gapok * 0.1;
+        var tunkel = status == "Menikah" ? gapok * 0.2 : 0 
+        var gatot = gapok + tunjab + bpjs + tunkel 
+        
+        document.write(
+        `<p>Nama : ${pegawai}</p>
+        <p>Jabatan : ${jabatan}</p>
+        <p>Status : ${status}</p>
+        <table cellpadding=8px border=1px>
+            <thead>
+                <tr>
+                    <td>Data</td>
+                    <td>Keterangan</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gaji Pokok</td>
+                    <td>Rp.${gapok}</td>
+                </tr>
+                <tr>
+                    <td>Tunjangan Jabatan</td>
+                    <td>Rp.${tunjab}</td>
+                </tr>
+                <tr>
+                    <td>BPJS</td>
+                    <td>Rp.${bpjs}</td>
+                </tr>
+                <tr>
+                    <td>Tunjangan Keluarga</td>
+                    <td>Rp.${tunkel}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total Gaji</td>
+                    <td>Rp.${gatot}</td>
+                </tr>
+            </tfoot>
+        </table>`
+        )
+
+    </script>
+</body>
+</html>

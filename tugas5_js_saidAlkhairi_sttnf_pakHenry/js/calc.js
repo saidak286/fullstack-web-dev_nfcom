@@ -1,11 +1,11 @@
-function hitung(tombol){
+function hitung(x){
     //tangkap id form
     var frm = document.getElementById('calcForm');
     var a1 = parseFloat(frm.angka1.value);
     var a2 = parseFloat(frm.angka2.value);
     // var total = frm.hasil.value;
 
-    switch (tombol){
+    switch (x){
         case 'btn_tambah':
             if (isNaN(a1) || isNaN(a2)) {
                 alert("Harap masukkan angka!!");
@@ -47,7 +47,7 @@ function hitung(tombol){
                 alert("Harap masukkan angka!!");
             }    
             else {
-                var total = Math.pow(a1,a2); //rumus
+                var total = a1 ** a2; //rumus
                 frm.hasil.value = total; //penempatan hasil
             } 
             break;

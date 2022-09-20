@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" border="1" cellpadding="10">
+        <thead>
+            <tr bgcolor="tomato">
+                <th>NO</th>
+                <th>LOKASI</th>
+                <th>SKALA</th>
+                <th>DAMPAK</th>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                class gempa{
+                    constructor(no, lokasi, skala){
+                        this.no = no;
+                        this.lokasi = lokasi;
+                        this.skala = skala;
+                    }
+            
+                    dampak(){
+                        if(this.skala <= 2){
+                            this.siaga = "tidak terasa";
+                        }
+                        else if(this.skala > 2 && this.skala <= 4){
+                            this.siaga = "bagunan retak-retak";
+                        }
+                        else if(this.skala > 4 && this.skala <= 6){
+                            this.siaga = "bangunan roboh"
+                        }
+                        else{
+                            this.siaga = "bangunan roboh dan berpotensi tsunami";
+                        }
+            
+                        return this.siaga;
+                    }
+            
+                    infoGempa(){
+                        document.write(
+                        `<tr>
+                            <td>${this.no}</td>
+                            <td>${this.lokasi}</td>
+                            <td>${this.skala}</td>
+                            <td>${this.dampak()}</td> 
+                        </tr>`)               
+                    }
+                }
+                //-------membuat object-------//
+                g1 = new gempa(1, 'Aceh', 6);
+                g2 = new gempa(2, 'Sumatra Barat', 4);
+                g3 = new gempa(3, 'Lampung', 7);
+                g4 = new gempa(4, 'Banten', 8);
+                g5 = new gempa(5, 'Jawa Timur', 3);
+                g6 = new gempa(6, 'Balikpapan', 1);
+                g7 = new gempa(7, 'Bali', 1);
+                g8 = new gempa(8, 'Sulawesi Utara', 2);
+                g9 = new gempa(9, 'Maluku Utara', 5);
+                g10 = new gempa(10, 'Fak-fak', 4);
+                
+                g1.infoGempa(); 
+                g2.infoGempa(); 
+                g3.infoGempa(); 
+                g4.infoGempa(); 
+                g5.infoGempa(); 
+                g6.infoGempa(); 
+                g7.infoGempa(); 
+                g8.infoGempa(); 
+                g9.infoGempa(); 
+                g10.infoGempa();
+        
+        </script>
+        </tbody>
+</body>
+</html>
+
+    

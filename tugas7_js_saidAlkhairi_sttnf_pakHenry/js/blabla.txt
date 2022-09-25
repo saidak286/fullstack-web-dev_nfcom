@@ -1,0 +1,120 @@
+<script type="text/javascript">
+        $("document").ready(function () {
+            $("div.ayam").click(function () {
+                $(this).css({
+                    background: "url('images/ayam.jpg')"
+                });
+            });
+            $("div.ayam").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/ayam.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+            
+            $("div.bebek").click(function () {
+                $(this).css({
+                    background: "url('images/bebek.jpg')"
+                });
+            });
+            $("div.bebek").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/bebek.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            })
+
+            $("div.burung").click(function () {
+                $(this).css({
+                    background: "url('images/burung.jpg')"
+                });
+            });
+            $("div.burung").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/burung.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            })
+
+            $("div.gajah").click(function () {
+                $(this).css({
+                    background: "url('images/gajah.jpg')"
+                });
+            });
+            $("div.gajah").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/gajah.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            })
+
+            $("div.beruang").click(function () {
+                $(this).css({
+                    background: "url('images/beruang.jpg')"
+                });
+            });
+            $("div.beruang").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/beruang.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            })
+
+            $("div.paus").click(function () {
+                $(this).css({
+                    background: "url('images/paus.jpg')"
+                });
+            });
+            $("div.paus").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/paus.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            })
+
+            $("div.gecko").click(function () {
+                $(this).css({
+                    background: "url('images/gecko.jpg')"
+                });
+            });
+            $("div.gecko").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/gecko.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            })
+
+            $("div.ular").click(function () {
+                $(this).css({
+                    background: "url('images/ular.jpg')"
+                });
+            });
+            $("div.ular").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/ular.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            })
+
+            $("div.buaya").click(function () {
+                $(this).css({
+                    background: "url('images/buaya.jpg')"
+                });
+            });
+            $("div.buaya").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/buaya.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            })
+        });
+    </script>

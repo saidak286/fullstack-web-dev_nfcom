@@ -15,7 +15,7 @@ class PersegiPanjang
     }
     public function kelilingBidang($p, $l)
     {
-        $K = 2 * ($p * $l);
+        $K = 2 * ($p + $l);
         return $K;
     }
 }

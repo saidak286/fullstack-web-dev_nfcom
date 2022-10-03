@@ -17,7 +17,7 @@ require_once 'Segitiga.php';
 
 <body>
     <div class="container mt-5">
-        <h1 class="text-center">Daftar Luas dan Keliling Bidang</h1>
+        <h1 class="text-center">Luas dan Keliling Bidang</h1>
         <table class="table text-center table-bordered mt-5">
             <thead class="table-primary">
                 <tr>

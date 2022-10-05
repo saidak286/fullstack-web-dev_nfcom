@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  } 
+/* Style the header */
+.header {
+  color: #f1f1f1;
+  background-image: url(../images/banner3.jpg);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the footer */
+.footer {
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.footer a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
